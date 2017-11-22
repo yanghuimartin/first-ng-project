@@ -12,7 +12,7 @@ import {Component} from '@angular/core';
 			<router-outlet></router-outlet>
 		</div>
     `,
-    styleUrls: ['./app.component.scss']
+	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
     title = 'welcome to my first Angular APP';

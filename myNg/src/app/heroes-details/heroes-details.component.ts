@@ -1,11 +1,13 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
     selector: 'app-heroes-details',
     templateUrl: './heroes-details.component.html',
-    styleUrls: ['./heroes-details.component.scss']
+    styleUrls: ['./heroes-details.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class HeroesDetailsComponent implements OnInit {
+    a = true;
     constructor() {
     }
     /**

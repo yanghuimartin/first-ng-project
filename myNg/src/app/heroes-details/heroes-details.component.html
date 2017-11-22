@@ -1,5 +1,5 @@
 <h2>My Heroes</h2>
-<div class="conatiner claer-fixed">
+<div class="conatiner claer-fixed bodyBox">
 	<label class="btn btn-primary">
 		Hero Name:
 	</label>
@@ -7,4 +7,14 @@
 	<button (click)="add(heroName.value);heroName.value=''" class="btn btn-default">Add</button>
 	<div class="mydiv">
 	</div>
+	<el-button (click)="a = true">自定义尾部</el-button>
+	<el-dialog [(visible)]=a>
+		<ng-template #title>
+			<span>朗诵</span>
+		</ng-template>
+		<span>这篇葛底斯堡演讲朗诵的很好。</span>
+		<ng-template #footer>
+			<el-button (click)="a = false">是的</el-button>
+		</ng-template>
+	</el-dialog>
 </div>
